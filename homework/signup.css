@@ -1,0 +1,108 @@
+.signup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__screen {
+  box-sizing: border-box;
+  width: 670px;
+  height: 960px;
+  border: 1px solid #aacdff;
+  box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+  border-radius: 20px;
+  padding: 72px 100px;
+}
+
+.signup__title {
+  font-family: "Noto Sans CJK KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 47px;
+  color: #0068ff;
+  margin-bottom: 60px;
+}
+
+.signup__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 21px;
+}
+
+.signup__content span {
+  font-family: "Noto Sans CJK KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #797979;
+}
+
+.signup__content input {
+  margin-top: 40px;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.signup__content input:focus {
+  border-bottom: 1px solid #0068ff;
+  outline: none;
+}
+
+.gender {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Noto Sans CJK KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.agree {
+  font-family: "Noto Sans CJK KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.border {
+  width: 470px;
+  height: 1px;
+
+  background: #e6e6e6;
+  margin: 30px 0px;
+}
+
+.button {
+  width: 470px;
+  height: 75px;
+
+  background: #ffffff;
+  border: 1px solid #0068ff;
+  border-radius: 10px;
+
+  font-family: "Noto Sans CJK KR";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #0068ff;
+}
