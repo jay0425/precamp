@@ -33,3 +33,24 @@ for (let count = 0; count < persons.length; count++) {
 // VM3953:5 훈이미성년자입니다
 // VM3953:3 맹구성인입니다
 // VM3953:5 도비미성년자입니다
+
+//-------------------------------------------------
+// 수학 객체
+
+Math.floor(Math.random() * 1000000);
+// 204625
+
+String(Math.floor(Math.random() * 1000000));
+// '773978'
+
+String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
+// '087691'
+
+let result = String(Math.floor(Math.random() * 1000000)).padStart(6, "0");
+// undefined
+result;
+// '519003'
+result;
+// '519003'
+result;
+// '519003'
