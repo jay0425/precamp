@@ -3,6 +3,7 @@
   <head>
     <title>Game</title>
     <link rel="stylesheet" href="./styles/game.css" />
+    <script src="./game.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -21,7 +22,7 @@
         </div>
         <div class="word__text">
           <input class="textbox" id="myword" placeholder="단어를 입력하세요." />
-          <button class="search">입력</button>
+          <button onclick="startWord()" class="search">입력</button>
         </div>
         <div id="result" class="word__results">결과!</div>
       </div>
