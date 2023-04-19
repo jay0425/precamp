@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Final</title>
+    <link rel="stylesheet" href="./final.css" />
+    <script src="./final.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__title">코드캠프 회원가입</div>
+
+      <div class="wrapper__items">
+        <input
+          type="text"
+          class="wrapper__item"
+          placeholder="이메일을 입력해 주세요."
+        />
+        <input
+          type="text"
+          class="wrapper__item"
+          placeholder="이름을 입력해 주세요."
+        />
+        <input
+          type="password"
+          class="wrapper__item"
+          placeholder="비밀번호를 입력해 주세요."
+        />
+        <input
+          type="password"
+          class="wrapper__item"
+          placeholder="비밀번호를 다시 입력해 주세요."
+        />
+      </div>
+
+      <div class="validation">
+        <div class="validation__row row__phone">
+          <input type="text" class="row__phone__number" />
+          <div>-</div>
+          <input class="row__phone__number" />
+          <div>-</div>
+          <input class="row__phone__number" />
+        </div>
+        <div class="validation__row">
+          <div class="validation__row__number">000000</div>
+          <input class="validation__btn" type="button" value="인증번호 전송" />
+        </div>
+        <div class="validation__row">
+          <div class="validation__row__timer">3:00</div>
+          <input
+            class="validation__complete__btn"
+            type="button"
+            value="인증완료"
+          />
+        </div>
+      </div>
+      <div>
+        <select class="region">
+          <option>지역을 선택하세요.</option>
+          <option>서울</option>
+          <option>인천</option>
+          <option>경기</option>
+        </select>
+      </div>
+      <div class="wrapper__radio">
+        <div class="radio__gender">
+          <input type="radio" name="gender" />
+          <label>여성</label>
+        </div>
+        <div class="radio__gender">
+          <input type="radio" name="gender" />
+          <label>남성</label>
+        </div>
+      </div>
+      <div class="divideLine"></div>
+      <input class="signup__btn" type="button" value="가입하기" />
+    </div>
+  </body>
+</html>
