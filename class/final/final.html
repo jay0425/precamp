@@ -34,19 +34,36 @@
 
       <div class="validation">
         <div class="validation__row row__phone">
-          <input type="text" class="row__phone__number" />
-          <div>-</div>
-          <input class="row__phone__number" />
-          <div>-</div>
-          <input class="row__phone__number" />
-        </div>
-        <div class="validation__row">
-          <div class="validation__row__number">000000</div>
-          <input class="validation__btn" type="button" value="인증번호 전송" />
-        </div>
-        <div class="validation__row">
-          <div class="validation__row__timer">3:00</div>
           <input
+            type="text"
+            class="row__phone__number"
+            id="p1"
+            oninput="changeFocus1()"
+            maxlength="3"
+          />
+          <div>-</div>
+          <input
+            class="row__phone__number"
+            id="p2"
+            oninput="changeFocus2()"
+            maxlength="4"
+          />
+          <div>-</div>
+          <input class="row__phone__number" id="p3" maxlength="4" />
+        </div>
+        <div class="validation__row">
+          <div id="target" class="validation__row__number">000000</div>
+          <input
+            onclick="number()"
+            class="validation__btn"
+            type="button"
+            value="인증번호 전송"
+          />
+        </div>
+        <div class="validation__row">
+          <div id="time" class="validation__row__timer">3:00</div>
+          <input
+            id="finish"
             class="validation__complete__btn"
             type="button"
             value="인증완료"
@@ -55,7 +72,7 @@
       </div>
       <div>
         <select class="region">
-          <option>지역을 선택하세요.</option>
+          <option disabled="true" selected="true">지역을 선택하세요.</option>
           <option>서울</option>
           <option>인천</option>
           <option>경기</option>
@@ -72,7 +89,12 @@
         </div>
       </div>
       <div class="divideLine"></div>
-      <input class="signup__btn" type="button" value="가입하기" />
+      <input
+        disabled="true"
+        class="signup__btn"
+        type="button"
+        value="가입하기"
+      />
     </div>
   </body>
 </html>
